@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .nav-links li {
+    position: relative;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: background 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+.navbar .hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.navbar .hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+}
+
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #333;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar .nav-links li {
+        margin: 10px 0;
+    }
+
+    .navbar .hamburger {
+        display: flex;
+    }
+
+    .navbar .nav-links.active {
+        display: flex;
+    }
+}
+
+.content {
+    padding: 50px;
+    text-align: center;
+    background-color: #fff;
+    margin-top: 20px;
+}
+img{
+    margin: 10px;
+}
+
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">JW International College Arts, Science</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMzUEeJl28BJD1Kt-ZsNR8KDIe9Rx9pXX4CiizB_tvtLUeLo7X">
+    <button>Veiw Results</button>
+    <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSX8McnaZsBOL8fG6DrZOJqpdtJQn4mRD4eVaEMdSR-bJ-KrPu2">
+    <button>Veiw Results</button>
+    <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRJH092OLShEE6-zZwVvNHxzcBzPBhtfxMf1t16I5BimA83QlEY">
+    <button>Veiw Results</button>
+    <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTFygaQ5RDOlX3SvEqJ1xnnbMso9SUfcCRz-BdLAs19JJ5KRvzs">
+    <button>Veiw Results</button>
+    <form style="background-color: black; color: white; padding: 30px;">
+        <h4>Contact Us</h4>
+        <h6>Address: Uk City</h6>
+        <h6>Email: Jiminternational@gmail.com</h6>
+        <h6>Tele: +1 1234567890</h6>
+        <h3>Qurey Form</h3>
+        <label>Name:</label>
+        <br>
+        <input type="text" placeholder="Enter your name">
+        <br><br>
+        <label>Email:</label>
+        <br>
+        <input type="email" placeholder="Enter your Email">
+        <br><br>
+        <label>Query:</label>
+        <br>
+        <input type="text">
+    </form>
+</body>
+</html>
